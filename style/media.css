@@ -1,0 +1,14 @@
+@media (max-width: 600px){
+  .header-text__title{
+    font-size: 40px;
+  }
+  .header-text__discribe{
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px){
+  .header__inner-text{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
