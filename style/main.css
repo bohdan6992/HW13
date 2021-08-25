@@ -82,9 +82,13 @@ ul{
 .menu{
   margin: 0 auto;
   margin-bottom: 58px;
+  
+}
+.line{
   border-bottom: 1px solid #e6e6e6;
 }
 .menu__inner{
+  position: relative;
   padding: 24px 0 23px;
   max-width: 942px;
   display: flex;
@@ -93,8 +97,8 @@ ul{
   margin: 0 auto;
 }
 .menu__logo img{
-  width: 80px;
-  height: 18px;
+  width: 90px;
+  height: 22px;
   cursor: pointer;
 }
 .menu__list-items{
@@ -482,3 +486,105 @@ ul{
   padding-bottom: 23px;
   background-color: #171819;
 }
+
+
+/* ____________________*****FRAGMENTS FOR ADAPTIVE*****_________________________ */
+
+/* _____________________________hamburger-menu__________________________________ */
+
+.hamburger-menu{
+  display: block;
+  visibility: hidden;
+  position: relative;
+}
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  margin-top: 23px;
+  width: 100%;
+  display: block;
+  visibility: visible;
+  transform: translateX(0%);
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -28px;
+  right: 0px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  max-width: 762px;
+  margin: 0 auto;
+  padding: 50px 0;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+  text-align: center;
+  z-index: 1;
+  visibility: hidden;
+  position: absolute;
+  transform: translateX(-150%);
+}
+
+.menu__box li + li{
+  margin-top: 10px;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  transition-duration: .25s;
+}
+.menu__item a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #485558;
+  letter-spacing: 1.1px;
+}
+.menu__item a:hover{
+  color: #00a4e5;
+}
+
+
+
