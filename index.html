@@ -5,333 +5,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/main.css">
-  <link rel="stylesheet" href="./style/media.css">
+
+<script>
+  setTimeout(function(){
+    document.getElementById('preloader').style.display = 'none';
+  }, 60000);
+  </script>
   <title>
-    Konstruct
+    Animation
   </title>
 </head>
 
 <body>
+  <div id="preloader">
+    <img class="preloader__clock" src="./images/clock.png" alt="">
+    <img class="preloader__arrow" src="./images/arrow (2).png" alt="">
+  </div>
 
- <header class="header">
-   <div class="container">
-     <div class="header__inner">
-       <div class="header__inner-logo">
-         <a class="logl-link" href="#">
-           <img src="./img/logo - white.svg" alt="logo">
-         </a>
-       </div>
-       <div class="header__inner-text">
-         <div class="header-text__title">
-          PARTNER WITH KONSTUCT
-         </div>
-         <div class="header-text__discribe">
-          An award-winning construction management firm
-         </div>
-       </div>
-       <div class="header__inner-btn">
-        <a href="#">SCROLL DOWN</a>
-      </div>
-     </div>
-   </div>
- </header>
-
- <nav class="menu">
-   <div class="container line">
-     <div class="menu__inner">
-       <div class="menu__logo">
-         <a href="#">
-          <img src="./img/logo-black.svg" alt="">
-         </a>
-       </div>
-
-       <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <ul class="menu__box">
-          <li class="menu__item">
-            <a href="#">
-             HOME
-            </a>
-         </li>
-          <li class="menu__item">
-            <a href="#">
-             ABOUT
-            </a>
-         </li>
-          <li class="menu__item">
-            <a href="#">
-              SERVICES
-            </a>
-         </li>
-          <li class="menu__item">
-            <a href="#">
-              WORK
-             </a>
-         </li>
-          <li class="menu__item">
-            <a href="#">
-              CONTACT
-            </a>
-         </li>
-        </ul>
-      </div>
-
-
-       <div class="menu__list">
-         <ul class="menu__list-items">
-           <li class="menu__list-item">
-             <a href="#">
-              HOME
-             </a>
-          </li>
-           <li class="menu__list-item">
-             <a href="#">
-              ABOUT
-             </a>
-          </li>
-           <li class="menu__list-item">
-             <a href="#">
-               SERVICES
-             </a>
-          </li>
-           <li class="menu__list-item">
-             <a href="#">
-               WORK
-              </a>
-          </li>
-           <li class="menu__list-item">
-             <a href="#">
-               CONTACT
-             </a>
-          </li>
-         </ul>
-       </div>
-     </div>
-   </div>
- </nav>
-
- <!-- <section class="about">
-    <div class="small-container">
-      <div class="about__inner">
-        <div class="about__title">
-          OUR STORY
-        </div>
-        <div class="about__box-inner">
-          <div class="about__text-box">
-            <div class="about__text-title">
-              Founded in 2011 by John Mathew Smith, <span>Konstruct</span> has become the number one construction management firm
-            </div>
-            <div class="about__text-discription">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-            </div>
-          </div>
-          <div class="about_content-box">
-            <div class="about__content-item">
-              <img src="./img/Bitmap plan.png" alt="">
-              <div class="content-item__title">
-                WE
-                <br>
-                PLAN
-              </div>
-            </div>
-            <div class="about__content-item">
-              <img src="./img/Bitmap manage.png" alt="">
-              <div class="content-item__title">
-                 WE
-                 <br>
-                 MANAGE
-               </div>
-            </div>
-            <div class="about__content-item">
-              <img src="./img/Bitmap build.png" alt="">
-              <div class="content-item__title">
-                 WE
-                 <br>
-                 BUILD
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- <section class="service">
-    <div class="small-container">
-      <div class="service__inner">
-        <div class="service__top">
-          <div class="service__top-title">
-            OUR CAPABILITIES
-          </div>
-          <div class="service__top-text">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-          </div>
-          <div class="service__top-btn">
-            <a href="#">
-              ALL SERVICES
-            </a>
-          </div>
-        </div>
-        <div class="service__content">
-          <div class="service__content-item">
-            <div class="service__item-icon">
-              <img src="./img/proj.png" alt="project">
-            </div>
-            <div class="service__item-title">
-              PROJECT AND CONSTRUCTION<br> MANAGEMENT
-            </div>
-            <div class="service__item-text">
-              Lorem ipsum dolor sit amet,<br> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-            </div>
-          </div>
-  
-          <div class="service__content-item">
-            <div class="service__item-icon">
-              <img src="./img/struc.png" alt="project">
-            </div>
-            <div class="service__item-title">
-              STRUCTURE AUDIT AND <br> MAINTENANCE
-            </div>
-            <div class="service__item-text">
-              Lorem ipsum dolor sit amet,<br> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-            </div>
-          </div>
-  
-          <div class="service__content-item">
-            <div class="service__item-icon">
-              <img src="./img/fackt.png" alt="factory">
-            </div>
-            <div class="service__item-title">
-              FACTORY CONSTRUCTION<br> AND MODELING
-  
-            </div>
-            <div class="service__item-text">
-              Lorem ipsum dolor sit amet,<br> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- <section class="contact">
+  <nav class="wrapper">
     <div class="container">
-      <div class="contact__inner">
-        <div class="contact-title">
-          Want to build <br>
-          something amazing?
+      <div class="players">
+        <div class="player pl1">
+          <img src="./images/Ёжик.png" alt="">
+          <div class="podium p1"></div>
         </div>
-        <div class="contact__btn">
-          <a href="">
-            GET IN TOUCH
-          </a>
+        <div class="player pl2">
+          <img src="./images/Пин.png" alt="">
+          <div class="podium p2"></div>
         </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- <section class="newsletter">
-    <div class="container">
-      <div class="newsletter__inner">
-        <div class="newsletter__inner-box">
-          <div class="newsletter__title">
-            Newsletter Signup
-          </div>
-          <form class="newsletter__form" action="">
-            <input type="text" placeholder="test@youremail.com">
-            <button>
-              SIGNUP
-            </button>
-          </form>
+        <div class="player pl3">
+          <img src="./images/Копатыч.png" alt="">
+          <div class="podium p3"></div>
+        </div>
+        <div class="player pl4">
+          <img src="./images/Бараш.png" alt="">
+          <div class="podium p4"></div>
+        </div>
+        <div class="player pl5">
+          <img src="./images/Карыч.png" alt="">
+          <div class="podium p5"></div>
         </div>
       </div>
-    </div>
-  </section> -->
-
-  <!-- <footer class="footer">
-    <div class="container">
-      <div class="footer__main-inner">
-        <div class="footer__main-box">
-          <div class="footer__company">
-            <div class="footer__company-title">
-              COMPANY
-            </div>
-            <div class="footer__inner-logo">
-              <a href="#">
-                <img class="company-logo" src="./img/logo - white.svg" alt="logo">
-              </a>
-            </div>
-            <div class="footer__company-text">
-                Lorem ipsum dolor sit amet, consectetuer <br> adipiscing elit, sed diam nonummy nibh<br> euismod tincidunt ut laoreet dolore<br> magna aliquam erat.
-            </div>
-          </div>
-          <div class="footer__links">
-            <div class="footer__links-title">
-              LINKS
-            </div>
-            <div class="footer__links-lists">
-              <ul class="footer__links-menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">CONTACT US</a></li>
-              </ul>
-  
-              <ul class="footer__links-faq">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">TERMS</a></li>
-                <li><a href="#">CAREERS</a></li>
-              </ul>
-  
-              <ul class="footer__links-blog">
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">PARTNERS</a></li>
-                <li><a href="#">NEWS</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__contact">
-            <div class="footer__contact-title">
-              CONTACT US
-            </div>
-            <div class="footer__contact-text">
-              213 Baker Street <br>
-              Oriel City Kounty <br>
-              7000 KNW, <br>
-              Kountry Name
-            </div>
-            <div class="footer__contact-tel">
-              <a href="tel:+23 994 233 4022">
-                +23 994 233 4022
-              </a>
-            </div>
-  
-            <div class="footer__contact-email">
-              <a href="mailto:info@konstruct.com">
-                info@konstruct.com
-              </a>
-            </div>
-          </div>
-          <div class="footer__social">
-            <img src="./img/facebook (1).svg" alt="">
-            <img src="./img/twitter (1).svg" alt="">
-            <img src="./img/google (1).svg" alt="">
-          </div>
+      <div class="ball">
+        <img src="./images/ball.jpg" alt="">
       </div>
     </div>
-    <div class="footer__company-inner">
-      © 2017 Konstruct Inc. Designed by Jane Kathryn Teo
-    </div>
-
-  </footer> -->
-
+  </nav>
+  
 </body>
 </html>
